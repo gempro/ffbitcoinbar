@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{7C9AE783-DB21-4e40-81FB-AD8A53A6233A}</em:id>
+	<em:strictCompatibility>true</em:strictCompatibility>
+	<em:multiprocessCompatible>false</em:multiprocessCompatible>
+    <em:version>1.0</em:version>
+    <em:unpack>true</em:unpack>
+    <em:type>2</em:type>
+   
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>52.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+   
+    <!-- Front End MetaData -->
+    <em:name>BitcoinBar</em:name>
+    <em:description>Displays the current value from Bitcoin in US-$ on Firefox's status bar.</em:description>
+    <em:creator>gempro</em:creator>
+    <em:homepageURL>https://github.com/gempro/ffbitcoinbar</em:homepageURL>
+    <em:iconURL>chrome://bitcoinbar/content/logo-icon32.png</em:iconURL>
+    
+  </Description>
+</RDF>

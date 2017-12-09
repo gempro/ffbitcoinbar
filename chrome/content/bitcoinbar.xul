@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+
+<overlay id="BitcoinBar" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<!-- Access the javascript that retrieves the Bitcoin value. -->
+<script type="application/x-javascript" src="chrome://bitcoinbar/content/getbitcoinvalue.js" />
+
+<!-- <script src="getbitcoinvalue.js"></script> -->
+
+<!-- This is for the Tools | BitcoinBar | (Copy current value && Force Update instant) menu. -->
+<menupopup id="bitcoinbarmenu_ToolsPopup">
+        <menu id="bitcoinbar_value" insertafter="devToolsSeparator" accesskey="L" label="BitcoinBar">
+          <menupopup id="new-bitcoinbarpopup">
+            <menuitem label="Copy Bitcoin value" accesskey="C" oncommand="copyBitcoinValueInfoBox();"/>
+			<menuitem label="Reload Bitcoin value instant" accesskey="F" oncommand="updatebitcoinvalue();"/>
+          </menupopup>
+        </menu>
+</menupopup>
+
+<!-- This is for the Status bar. -->
+<popupset>
+	<menupopup id="BitcoinBarPopUpMenu">
+		<menuitem label="Reload Bitcoin value instant" onclick="updatebitcoinvalue();"/>
+	</menupopup>
+</popupset>
+
+
+<statusbar id="status-bar">
+	<statusbarpanel id="BitcoinStatusBar"
+					label="Load Bitcoin value.."
+					tooltiptext="Displays the current value from Bitcoin"
+					context="BitcoinBarPopUpMenu"
+					onclick="copyBitcoinValueToClipBoard()"
+	/>
+</statusbar>
+
+<!-- This is for the right click list. -->
+<popup id="contentAreaContextMenu">
+  <menuitem id="bcb-context-item" label="Copy Bitcoin value" oncommand="copyBitcoinValueInfoBox();"/>
+</popup>
+
+
+</overlay>
