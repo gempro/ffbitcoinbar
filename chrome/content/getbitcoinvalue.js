@@ -61,7 +61,7 @@ function copyBitcoinValueToClipBoard()
 ***************************************************************************/
 function updatebitcoinvalue()
 {
-	bcb_makeRequestIntelCommsXML('http://techweb.at/api/bitcoin/', '');
+	bcb_makeRequestIntelCommsXML('https://cdn7.techweb.at/api/bitcoin/', '');
 	self.setTimeout('updatebitcoinvalue()', refreshTime);//Remember to check for IP changes
 }
 
