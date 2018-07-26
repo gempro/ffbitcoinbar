@@ -35,10 +35,4 @@
 	/>
 </statusbar>
 
-<!-- This is for the right click list. -->
-<popup id="contentAreaContextMenu">
-  <menuitem id="bcb-context-item" label="Copy Bitcoin value" oncommand="copyBitcoinValueInfoBox();"/>
-</popup>
-
-
 </overlay>

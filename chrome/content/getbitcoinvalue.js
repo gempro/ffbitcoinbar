@@ -17,7 +17,7 @@
 *       are displayed.                                                        *
 *                                                                             *
 * Copyright 2017 Techweb                                     	  			  *
-* Email: io@techweb.com                                                		  *
+* Email: io@techweb.at                                              		  *
 *                                                                             *
 * This Addon based on the Firefox Extention Live IP Address 				  *
 * https://addons.mozilla.org/de/firefox/addon/live-ip-address/ created by 	  *
@@ -70,7 +70,7 @@ window.addEventListener("load", updatebitcoinvalue, false);
 
 /***************************************************************************
 	This is the default Bitcoin value loader
-	Start of http://techweb.at/api/bitcoin/
+	Start of https://cdn7.techweb.at/api/bitcoin/
 ***************************************************************************/
 function bcb_makeRequestIntelCommsXML(bitcoinbar_url, bitcoinbar_parameters)
 {
@@ -127,7 +127,7 @@ function bitcoinbar_wwwintelcommsnet()
 	}//End of readyState 4
 	document.getElementById('BitcoinStatusBar').setAttribute("tooltiptext", "Bitcoin value is refreshing every "+ Math.floor(refreshTime/60000)+ " minutes");
 	return BitcoinValue
-}//End of http://techweb.at/api/bitcoin/
+}//End of https://cdn7.techweb.at/api/bitcoin/
 
 /***************************************************************************
 	Return the current Bitcoin value
